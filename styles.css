@@ -1,0 +1,124 @@
+/* Basic reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting body and general font styles */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #040a22;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Date style */
+header p {
+  color: #1a1f71; /* Dark blue color for date */
+  font-size: 0.85em;
+  font-family: Arial, sans-serif; /* Smaller sans-serif font for date */
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Main title style */
+header h1 {
+  font-size: 2em;
+  color: #131756; /* Dark bluish-black color for title */
+  margin: 10px 0;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+/* Breadcrumb styling with borders */
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9em;
+  color: #555;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.breadcrumb p {
+  color: #0066cc; /* Blue to mimic links */
+}
+
+/* Introduction section styles without background or border */
+.introduction {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.introduction p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1em;
+}
+
+/* Section styling */
+.first-section,
+.second-section {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.first-section h2,
+.second-section h2 {
+  color: #131756;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.first-section p,
+.second-section p {
+  text-align: justify;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+  .breadcrumb {
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction,
+  .first-section,
+  .second-section {
+    padding: 10px;
+  }
+}
